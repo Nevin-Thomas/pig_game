@@ -3,5 +3,5 @@ A short python game learning the basic python principles. 2 to 4 players can pla
 
 ## Languages and Tools
 <p align="left">
-<img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"/>
+[![My Skills](https://skillicons.dev/icons?i=python)](https://skillicons.dev)
 </p>
