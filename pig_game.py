@@ -24,7 +24,9 @@ player_scores = [0 for _ in range(players)] #list of all the scores for all play
 while max(player_scores) < max_score:
 
     for players_ind in range(players):
-        print("\nPlayer ", players_ind + 1, "turn has started\n")
+        print("\nPlayer number", players_ind + 1, "turn has started\n")
+        print("Your total score is ", player_scores[players_ind], "\n")
+
         current_score = 0
 
         while True:
@@ -33,7 +35,7 @@ while max(player_scores) < max_score:
                 break
             
             value = roll()
-            if value == 1 :
+            if value == 1:
                 print("You rolled a 1! Turn done!")
                 current_score = 0
                 break
@@ -43,10 +45,11 @@ while max(player_scores) < max_score:
 
             print("Your current score is", current_score)
 
-        player_scores[players_ind] == current_score
+        player_scores[players_ind] += current_score
         print("Your total score is", player_scores[players_ind])
 
 
-
-
+max_score = max(player_scores)
+winning_idx = player_scores.index(max_score) #index gives us to index of where the max score is
+print("Player number ", winning_idx + 1, "is the winner with a score of ", max_score)
 
